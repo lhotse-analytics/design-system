@@ -1,4 +1,15 @@
 {
+  "name": "design-system",
+  "version": "1.0.0",
+  "description": "Brand Guidelines and Design System of ivoflow Website and Product",
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lhotse-analytics/design-system"
+  },
+  "author": "Milena Meyer",
+  "license": "ISC",
+
   "devDependencies": {
     "gulp": "^5.0.0",
     "vitepress": "^1.2.3"
