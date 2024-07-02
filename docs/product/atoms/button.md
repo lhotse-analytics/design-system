@@ -61,11 +61,11 @@ button {
 
 ```SCSS
 .btn--primary.is-disabled {
-    cursor: not-allowed !important;
-    background-color: $primary-200 !important;
+    cursor: not-allowed;
+    background-color: $primary-200;
 
     &:hover {
-        background-color: $primary-200 !important;
+        background-color: $primary-200;
     }
 }
 ```
