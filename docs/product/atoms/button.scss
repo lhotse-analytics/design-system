@@ -36,7 +36,7 @@ button {
 }
 
 /* States */
-.btn.is-disabled {
+.btn.btn--primary.is-disabled {
     cursor: not-allowed !important;
     background-color: $primary-200 !important;
 

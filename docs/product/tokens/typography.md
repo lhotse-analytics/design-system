@@ -2,6 +2,10 @@
 outline: deep
 ---
 
+<style>
+    @import './../../dist/css/main.css'
+</style>
+
 # Typography
 
 ## General Variables
@@ -10,10 +14,8 @@ outline: deep
 
 Lexend, sans-serif
 
-```CSS
-:root {
-    --font-family: "Lexend", sans-serif;
-    }
+```SCSS
+$font-family: "Lexend", sans-serif;
 ```
 
 ### Font Sizes
@@ -21,148 +23,144 @@ Lexend, sans-serif
 #### Variables
 
 ```SCSS
-$font-size-xxs: 0.5rem;
-$font-size-xs: 0.625rem;
-$font-size-sm: 0.75rem;
-$font-size-base: 0.875rem;
-$font-size-md: 1rem;
-$font-size-lg: 1.125rem;
-$font-size-xl: 1.25rem;
-$font-size-2xl: 1.5rem;
-$font-size-3xl: 1.875rem;
-$font-size-4xl: 2.25rem;
+$font-size-xxs: 0.5rem;         // 8px
+$font-size-xs: 0.625rem;        // 10px
+$font-size-sm: 0.75rem;         // 12px
+$font-size-base: 0.875rem;      // 14px
+$font-size-md: 1rem;            // 16px
+$font-size-lg: 1.125rem;        // 18px
+$font-size-xl: 1.25rem;         // 20px
+$font-size-2xl: 1.5rem;         // 24px
+$font-size-3xl: 1.875rem;       // 30px
+$font-size-4xl: 2.25rem;        // 36px
 ```
 
 #### Examples
 
-<span class="span" style="font-size: var(--font-size-xxs);">Lorem Ipsum Dolor sit Amet</span>
+<span style="font-size: 0.5rem;">Lorem Ipsum Dolor sit Amet</span>
 
-```CSS
-var(--font-size-xxs)
+```SCSS
+$font-size-xxs
 ```
 
-<span class="span" style="font-size: var(--font-size-xs);">Lorem Ipsum Dolor sit Amet</span>
+<span style="font-size: 0.625rem;">Lorem Ipsum Dolor sit Amet</span>
 
-```CSS
-var(--font-size-xs)
+```SCSS
+$font-size-xs
 ```
 
-<span class="span" style="font-size: var(--font-size-sm);">Lorem Ipsum Dolor sit Amet</span>
+<span style="font-size: 0.75rem;">Lorem Ipsum Dolor sit Amet</span>
 
-```CSS
-var(--font-size-sm)
+```SCSS
+$font-size-sm
 ```
 
-<span class="span" style="font-size: var(--font-size-base);">Lorem Ipsum Dolor sit Amet</span>
+<span style="font-size: 0.875rem;">Lorem Ipsum Dolor sit Amet</span>
 
-```CSS
-var(--font-size-base)
+```SCSS
+$font-size-xxs
 ```
 
-<span class="span" style="font-size: var(--font-size-md);">Lorem Ipsum Dolor sit Amet</span>
+<span style="font-size: 1rem;">Lorem Ipsum Dolor sit Amet</span>
 
-```CSS
-var(--font-size-md)
+```SCSS
+$font-size-md
 ```
 
-<span class="span" style="font-size: var(--font-size-lg);">Lorem Ipsum Dolor sit Amet</span>
+<span style="font-size: 1.125rem;">Lorem Ipsum Dolor sit Amet</span>
 
-```CSS
-var(--font-size-lg)
+```SCSS
+$font-size-lg
 ```
 
-<span class="span" style="font-size: var(--font-size-xl);">Lorem Ipsum Dolor sit Amet</span>
+<span style="font-size: 1.25rem;">Lorem Ipsum Dolor sit Amet</span>
 
-```CSS
-var(--font-size-xl)
+```SCSS
+$font-size-xl
 ```
 
-<span class="span" style="font-size: var(--font-size-2xl);">Lorem Ipsum Dolor sit Amet</span>
+<span style="font-size: 1.5rem;">Lorem Ipsum Dolor sit Amet</span>
 
-```CSS
-var(--font-size-2xl)
+```SCSS
+$font-size-2xl
 ```
 
-<span class="span" style="font-size: var(--font-size-3xl);">Lorem Ipsum Dolor sit Amet</span>
+<span style="font-size: 1.875rem;">Lorem Ipsum Dolor sit Amet</span>
 
-```CSS
-var(--font-size-3xl)
+```SCSS
+$font-size-3xl
 ```
 
-<span class="span" style="font-size: var(--font-size-4xl);">Lorem Ipsum Dolor sit Amet</span>
+<span style="font-size: 2.25rem;">Lorem Ipsum Dolor sit Amet</span>
 
-```CSS
-var(--font-size-4xl)
+```SCSS
+$font-size-4xl
 ```
 
 ### Font Weights
 
 #### Variables
 
-```CSS
-:root {
-    --font-weight-light: 300;
-    --font-weight-base: 400;
-    --font-weight-bold: 600;
-    }
+```SCSS
+$font-weight-light: 300;
+$font-weight-base: 400;
+$font-weight-bold: 600;
 ```
 
 #### Examples
 
-<span class="span" style="font-weight: var(--font-weight-light);">Lorem Ipsum Dolor sit Amet</span>
+<span style="font-weight: 300;">Lorem Ipsum Dolor sit Amet</span>
 
-```CSS
-var(--font-weight-light);
+```SCSS
+$font-weight-light;
 ```
 
-<span class="span" style="font-weight: var(--font-weight-base);">Lorem Ipsum Dolor sit Amet</span>
+<span style="font-weight: 400;">Lorem Ipsum Dolor sit Amet</span>
 
-```CSS
-var(--font-weight-base);
+```SCSS
+$font-weight-base;
 ```
 
-<span class="span" style="font-weight: var(--font-weight-bold);">Lorem Ipsum Dolor sit Amet</span>
+<span style="font-weight: 600;">Lorem Ipsum Dolor sit Amet</span>
 
-```CSS
-var(--font-weight-bold);
+```SCSS
+$font-weight-bold;
 ```
 
 ### Line Heights
 
 #### Variables
 
-```CSS
-:root {
-    --line-height-small: 1rem;
-    --line-height-base: 1.25rem;
-    --line-height-large: 1.5rem;
-    }
+```SCSS
+$line-height-small: 1rem;
+$line-height-base: 1.25rem;
+$line-height-large: 1.5rem;
 ```
 
 #### Examples
 
 <br>
 
-<div class="span" style="line-height: var(--line-height-small)!important;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+<div style="line-height: 1rem;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
 
-```CSS
-var(--line-height-small);
+```SCSS
+$line-height-small
 ```
 
 <br>
 
-<div class="span" style="line-height: var(--line-height-base)!important;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+<div style="line-height: 1.25rem;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
 
-```CSS
-var(--line-height-base);
+```SCSS
+$line-height-base
 ```
 
 <br>
 
-<div class="span" style="line-height: var(--line-height-large)!important;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+<div style="line-height: 1.5rem;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
 
-```CSS
-var(--line-height-large);
+```SCSS
+$line-height-large
 ```
 
 ## Usage

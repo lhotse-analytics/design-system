@@ -6,32 +6,30 @@ outline: deep
     @import './../../dist/css/main.css'
 </style>
 
-# Primary
+# Buttons
 
-<button class="btn btn--primary">Click here</button>
-
-```HTML
-<button class="btn btn--primary">Click here</button>
-```
-
-<button class="btn btn--secondary">Click here</button>
-
-```HTML
-<button class="btn btn--secondary">Click here</button>
-```
-
-<button class="btn btn--primary is-disabled">Click here</button>
+## Base
 
 ```SCSS
-/* Base */
 button {
     border-radius: $rounded-base;
     font-family: $font-family;
     font-size: $font-size-btn;
     border: 1px solid;
 }
+```
 
-/* Modules */
+## Modules
+
+<button class="btn btn--primary">Click here</button>
+<button class="btn btn--secondary">Click here</button>
+
+```HTML
+<button class="btn btn--primary">Click here</button>
+<button class="btn btn--secondary">Click here</button>
+```
+
+```SCSS
 .btn {
     padding: $spacing-xxs $spacing-lg;
     text-align: center;
@@ -50,3 +48,27 @@ button {
     }
 }
 ```
+
+## States
+
+### Disabled
+
+<button class="btn btn--primary is-disabled">Click here</button>
+
+```HTML
+<button class="btn btn--primary is-disabled">Click here</button>
+```
+
+```SCSS
+.btn--primary.is-disabled {
+    cursor: not-allowed !important;
+    background-color: $primary-200 !important;
+
+    &:hover {
+        background-color: $primary-200 !important;
+    }
+}
+```
+
+### Active
+
