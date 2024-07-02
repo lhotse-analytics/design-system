@@ -19,17 +19,22 @@ button {
 }
 ```
 
-## Modules
+## Colors
 
-<button class="btn btn--primary">Click here</button>
-<button class="btn btn--secondary">Click here</button>
+<div>
+<button class="btn btn--primary">Primary Button</button>
+<button class="btn btn--secondary">Secondary Button</button>
+<button class="btn btn--tertiary">Tertiary Button</button>
+</div>
 
 ```HTML
 <button class="btn btn--primary">Click here</button>
 <button class="btn btn--secondary">Click here</button>
+<button class="btn btn--tertiary">Click here</button>
 ```
 
 ```SCSS
+/* LIGHT THEME */
 .btn {
     padding: $spacing-xxs $spacing-lg;
     text-align: center;
@@ -46,6 +51,75 @@ button {
         background-color: $white;
         border-color: $tertiary-200;
     }
+
+    &--tertiary {
+        color: $primary;
+        background-color: transparent;
+
+        &:hover {
+            color: $primary-300;
+        }
+    }
+}
+
+/* DARK THEME */
+.dark {
+    .btn {
+        &--primary {
+            color: $white;
+            background-color: $primary-400;
+    
+            &:hover {
+                background-color: $primary-300;
+                color: $white;
+            }
+        }
+
+        &--secondary {
+            color: $tertiary-300;
+            background-color: $tertiary-900;
+            border: 1px solid $tertiary-400;
+    
+            &:hover {
+                background-color: $tertiary-600;
+                color: $tertiary-50;
+            }
+        }
+
+        &--tertiary {
+            color: $tertiary-300;
+    
+            &:hover {
+                color: $tertiary-50;
+            }
+        }
+    }
+}
+```
+
+## Sizes
+
+<div>
+<button class="btn btn--primary btn--small">Small</button>
+<button class="btn btn--primary">Base</button>
+<button class="btn btn--primary btn--large">Large</button>
+</div>
+
+```HTML
+<button class="btn btn--primary btn--small">Small</button>
+<button class="btn btn--primary">Base</button>
+<button class="btn btn--primary btn--large">Large</button>
+```
+
+```SCSS
+.btn {
+    &--small {
+        padding: $spacing-xxs $spacing-sm;
+    }
+
+    &--large {
+        padding: $spacing-sm $spacing-lg;
+    }
 }
 ```
 
@@ -53,10 +127,10 @@ button {
 
 ### Disabled
 
-<button class="btn btn--primary is-disabled">Click here</button>
+<button class="btn btn--primary is-disabled">Disabled</button>
 
 ```HTML
-<button class="btn btn--primary is-disabled">Click here</button>
+<button class="btn btn--primary is-disabled">Disabled</button>
 ```
 
 ```SCSS
