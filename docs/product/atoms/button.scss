@@ -1,3 +1,47 @@
+/* Base */
 button {
-    color: $primary;
+    border-radius: $rounded-base;
+    font-family: $font-family;
+    font-size: $font-size-btn;
+    border: 1px solid;
 }
+
+/* Modules */
+
+.btn {
+    padding: $spacing-xs $spacing-md;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &--primary {
+        color: $white;
+        background-color: $primary;
+
+        &:hover {
+            background-color: $primary-600;
+        }
+    }
+
+    &--secondary {
+        color: $text-primary;
+        background-color: $white;
+        border-color: $tertiary-200;
+
+        &:hover {
+            background-color: $tertiary-50;
+            color: $primary;
+        }
+    }
+}
+
+/* States */
+.btn.is-disabled {
+    cursor: not-allowed !important;
+    background-color: $primary-200 !important;
+
+    &:hover {
+        background-color: $primary-200 !important;
+    }
+}
+

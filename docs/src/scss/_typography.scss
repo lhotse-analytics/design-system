@@ -4,16 +4,18 @@
 $font-family: "Lexend", sans-serif;
 
 /* Font Sizes */
-$font-size-xxs: 0.5rem;
-$font-size-xs: 0.625rem;
-$font-size-sm: 0.75rem;
-$font-size-base: 0.875rem;
-$font-size-md: 1rem;
-$font-size-lg: 1.125rem;
-$font-size-xl: 1.25rem;
-$font-size-2xl: 1.5rem;
-$font-size-3xl: 1.875rem;
-$font-size-4xl: 2.25rem;
+$font-size-xxs: 0.5rem;         // 8px
+$font-size-xs: 0.625rem;        // 10px
+$font-size-sm: 0.75rem;         // 12px
+$font-size-base: 0.875rem;      // 14px
+$font-size-md: 1rem;            // 16px
+$font-size-lg: 1.125rem;        // 18px
+$font-size-xl: 1.25rem;         // 20px
+$font-size-2xl: 1.5rem;         // 24px
+$font-size-3xl: 1.875rem;       // 30px
+$font-size-4xl: 2.25rem;        // 36px
+
+$font-size-btn: $font-size-base;
 
 /* Font Weights */
 $font-weight-light: 300;

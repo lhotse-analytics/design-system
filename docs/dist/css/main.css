@@ -1,2 +1,2 @@
-button{color:#002aa7}
+@import url(https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap);button{border-radius:8px;font-family:Lexend,sans-serif;font-size:.875rem;border:1px solid}.btn{padding:.5rem .75rem;text-align:center;cursor:pointer;transition:background-color .3s}.btn--primary{color:#fff;background-color:#002aa7}.btn--primary:hover{background-color:#001d74}.btn--secondary{color:#171717;background-color:#fff;border-color:#d0d0d0}.btn--secondary:hover{background-color:#fafafa;color:#002aa7}.btn.is-disabled{cursor:not-allowed!important;background-color:#7991d9!important}.btn.is-disabled:hover{background-color:#7991d9!important}
 /*# sourceMappingURL=main.css.map */

@@ -15,6 +15,13 @@ export default defineConfig({
     sidebar: {
         '/product/': [
           {
+            text: 'Getting Started',
+            items: [
+              { text: 'File Structure', link: '/product/file-structure' },
+              { text: 'CSS Naming Conventions', link: '/product/naming-conventions' }
+            ]
+          },
+          {
         text: 'Design Tokens',
         items: [
           { text: 'Colors', link: '/product/tokens/colors' },
