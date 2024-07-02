@@ -2,13 +2,6 @@
 outline: deep
 ---
 
-<style>
-    @import "../../../dist/css/main.min.css";
-    .span {
-        font-family: var(--font-family);
-    }
-</style>
-
 # Typography
 
 ## General Variables

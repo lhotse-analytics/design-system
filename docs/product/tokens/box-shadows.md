@@ -3,27 +3,29 @@ outline: deep
 ---
 
 <style>
+    @import './../../src/scss/_border-radius.scss';
+    @import './../../src/scss/_box-shadows.scss';
     .box-shadow-container {
         width: 100%;
         max-width: 12rem;
         height: 12rem;
-        border-radius: var(--rounded-base);
+        border-radius: $rounded-base;
     }
 
     .shadow-sm {
-            box-shadow: var(--shadow-sm);
+            box-shadow: $shadow-sm;
         }
 
         .shadow-md {
-            box-shadow: var(--shadow-md);
+            box-shadow: $shadow-md;
         }
 
         .shadow-lg {
-            box-shadow: var(--shadow-lg);
+            box-shadow: $shadow-lg;
         }
 
         .shadow-xl {
-            box-shadow: var(--shadow-xl);
+            box-shadow: $shadow-xl;
         }
 </style>
 

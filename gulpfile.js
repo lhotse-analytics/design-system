@@ -1,32 +1,35 @@
 const gulp = require('gulp');
-const postcss = require('gulp-postcss');
-const cleanCSS = require('gulp-clean-css');
-const atImport = require('postcss-import');
-const concat = require('gulp-concat');
 const sass = require('gulp-sass')(require('sass'));
+const cleanCSS = require('gulp-clean-css');
+const sourcemaps = require('gulp-sourcemaps');
 
+// Pfade
 const paths = {
-    styles: {
-      src: './docs/src/**/*.scss',
-      dest: 'dist/css',
-    }
+  scss: {
+    src: './docs/src/scss/**/*.scss',
+    dest: './docs/dist/css'
+  }
 };
 
-function styles() {
-return gulp.src(paths.styles.src)
-    .pipe(postcss([atImport()]))              // Resolve @import statements
+// Sass kompilieren und minifizieren
+function compileSass() {
+  return gulp.src(paths.scss.src)
+    .pipe(sourcemaps.init()) // Initialisiere Sourcemaps
     .pipe(sass().on('error', sass.logError))
-    .pipe(concat('main.min.css'))             // Alle CSS-Dateien zusammenführen
-    .pipe(cleanCSS())                         // Minimieren der CSS-Dateien
-    .pipe(gulp.dest(paths.styles.dest));      // Ausgabe in das Zielverzeichnis
+    .pipe(cleanCSS()) // CSS minifizieren
+    .pipe(sourcemaps.write('.')) // Schreibe Sourcemaps
+    .pipe(gulp.dest(paths.scss.dest));
 }
 
-function watch() {
-    gulp.watch(paths.styles.src, styles);
-  }
+// Beobachte Änderungen an den SCSS-Dateien
+function watchFiles() {
+  gulp.watch(paths.scss.src, compileSass);
+}
 
-const build = gulp.series(styles, watch);
-  
-exports.styles = styles;
-exports.watch = watch;
+// Aufgaben definieren
+const build = gulp.series(compileSass, watchFiles);
+
+// Aufgaben exportieren
+exports.compileSass = compileSass;
+exports.watchFiles = watchFiles;
 exports.default = build;
