@@ -27,19 +27,17 @@ Lexend, sans-serif
 
 #### Variables
 
-```CSS
-:root {
-    --font-size-xxs: 0.5rem;
-    --font-size-xs: 0.625rem;
-    --font-size-sm: 0.75rem;
-    --font-size-base: 0.875rem;
-    --font-size-md: 1rem;
-    --font-size-lg: 1.125rem;
-    --font-size-xl: 1.25rem;
-    --font-size-2xl: 1.5rem;
-    --font-size-3xl: 1.875rem;
-    --font-size-4xl: 2.25rem;
-    }
+```SCSS
+$font-size-xxs: 0.5rem;
+$font-size-xs: 0.625rem;
+$font-size-sm: 0.75rem;
+$font-size-base: 0.875rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.25rem;
+$font-size-2xl: 1.5rem;
+$font-size-3xl: 1.875rem;
+$font-size-4xl: 2.25rem;
 ```
 
 #### Examples
