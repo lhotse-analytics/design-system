@@ -9,8 +9,6 @@ This guide provides instructions and best practices for structuring stylesheets,
 3. [Folder Structure](#folder-structure)
 4. [Naming Conventions](#naming-conventions)
 5. [Writing Classes](#writing-classes)
-6. [Using SMACSS Modules](#using-smacss-modules)
-7. [Examples](#examples)
 
 ## Prerequisites
 
