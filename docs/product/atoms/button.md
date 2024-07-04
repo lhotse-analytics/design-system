@@ -22,20 +22,20 @@ button {
 ## Colors
 
 <div>
-<button class="btn btn--primary">Primary Button</button>
-<button class="btn btn--secondary">Secondary Button</button>
-<button class="btn btn--tertiary">Tertiary Button</button>
+<button class="ivf-btn ivf-btn--primary">Primary Button</button>
+<button class="ivf-btn ivf-btn--secondary">Secondary Button</button>
+<button class="ivf-btn ivf-btn--tertiary">Tertiary Button</button>
 </div>
 
 ```HTML
-<button class="btn btn--primary">Click here</button>
-<button class="btn btn--secondary">Click here</button>
-<button class="btn btn--tertiary">Click here</button>
+<button class="ivf-btn ivf-btn--primary">Click here</button>
+<button class="ivf-btn ivf-btn--secondary">Click here</button>
+<button class="ivf-btn ivf-btn--tertiary">Click here</button>
 ```
 
 ```SCSS
 /* LIGHT THEME */
-.btn {
+.ivf-btn {
     padding: $spacing-xxs $spacing-lg;
     text-align: center;
     cursor: pointer;
@@ -64,7 +64,7 @@ button {
 
 /* DARK THEME */
 .dark {
-    .btn {
+    .ivf-btn {
         &--primary {
             color: $white;
             background-color: $primary-400;
@@ -100,15 +100,15 @@ button {
 ## Sizes
 
 <div>
-<button class="btn btn--primary btn--small">Small</button>
-<button class="btn btn--primary">Base</button>
-<button class="btn btn--primary btn--large">Large</button>
+<button class="ivf-btn ivf-btn--primary ivf-btn--small">Small</button>
+<button class="ivf-btn ivf-btn--primary">Base</button>
+<button class="ivf-btn ivf-btn--primary ivf-btn--large">Large</button>
 </div>
 
 ```HTML
-<button class="btn btn--primary btn--small">Small</button>
-<button class="btn btn--primary">Base</button>
-<button class="btn btn--primary btn--large">Large</button>
+<button class="ivf-btn ivf-btn--primary ivf-btn--small">Small</button>
+<button class="ivf-btn ivf-btn--primary">Base</button>
+<button class="ivf-btn ivf-tn--primary ivf-btn--large">Large</button>
 ```
 
 ```SCSS
@@ -127,14 +127,14 @@ button {
 
 ### Disabled
 
-<button class="btn btn--primary is-disabled">Disabled</button>
+<button class="ivf-btn ivf-btn--primary is-disabled">Disabled</button>
 
 ```HTML
-<button class="btn btn--primary is-disabled">Disabled</button>
+<button class="ivf-btn ivf-btn--primary is-disabled">Disabled</button>
 ```
 
 ```SCSS
-.btn--primary.is-disabled {
+.ivf-btn--primary.is-disabled {
     cursor: not-allowed;
     background-color: $primary-200;
 
@@ -145,4 +145,15 @@ button {
 ```
 
 ### Active
+
+## Icon Buttons
+
+### Icon & Text
+
+<button class="ivf-btn ivf-btn--primary">
+<svg width="auto" height="24px" style="padding: 5px 0;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21">
+<path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"/>
+</svg></button>
+
+### Icon Only
 

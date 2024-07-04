@@ -1,0 +1,19 @@
+input, textarea {
+    @include base-font;
+    background-color: transparent;
+    padding: $spacing-xs $spacing-sm; 
+    width: 100%;
+    border-radius: $rounded-base;
+}
+
+.form-input {
+    border: 1px solid $tertiary-200;
+
+    &:focus {
+        border-color: $primary;
+    }
+
+    &:valid {
+        border-color: $background-success;
+    }
+}

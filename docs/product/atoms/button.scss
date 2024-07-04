@@ -1,7 +1,11 @@
 /* Base */
 button {
     @include transition(all);
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $spacing-xs;
+    line-break: strict;
     border-radius: $rounded-base;
     font-family: $font-family;
     font-size: $font-size-btn;
@@ -9,8 +13,7 @@ button {
 }
 
 /* Modules */
-
-.btn {
+.ivf-btn {
     padding: $spacing-xs $spacing-md;
     text-align: center;
     cursor: pointer;
@@ -54,7 +57,7 @@ button {
 }
 
 /* States */
-.btn.btn--primary.is-disabled {
+.ivf-btn.ivf-btn--primary.is-disabled {
     cursor: not-allowed !important;
     background-color: $primary-200 !important;
 
@@ -64,9 +67,8 @@ button {
 }
 
 /* Theme */
-
 .dark {
-    .btn {
+    .ivf-btn {
         &--primary {
             color: $white;
             background-color: $primary-400;
@@ -97,4 +99,3 @@ button {
         }
     }
 }
-

@@ -3,3 +3,7 @@
       transition: $property 0.3s ease;
     }
   };
+
+@mixin base-font {
+    font-family: $font-family;
+}
