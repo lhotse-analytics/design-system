@@ -4,6 +4,12 @@
     }
   };
 
-@mixin base-font {
+@mixin ivf-base-font {
     font-family: $ivf-font-family;
+}
+
+@mixin ivf-base-text {
+  @include ivf-base-font;
+  font-size: $ivf-font-size-base;
+  color: $ivf-text-primary;
 }
