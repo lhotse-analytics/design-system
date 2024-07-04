@@ -6,7 +6,7 @@ input, textarea {
     border-radius: $rounded-base;
 }
 
-.form-input {
+.ivf-form-input {
     border: 1px solid $tertiary-200;
 
     &:focus {
@@ -14,6 +14,10 @@ input, textarea {
     }
 
     &:valid {
-        border-color: $background-success;
+        border-color: $text-success;
+    }
+
+    &::placeholder {
+        color: $tertiary-300;
     }
 }

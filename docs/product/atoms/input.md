@@ -14,4 +14,4 @@ outline: deep
 
 <br>
 <label>Label</label>
-<input class="form-input" type="text" id="first_name" placeholder="John"/>
+<input class="ivf-form-input" type="text" id="first_name" placeholder="John"/>
