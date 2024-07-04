@@ -4,65 +4,65 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: $spacing-xs;
+    gap: $ivf-spacing-xs;
     line-break: strict;
-    border-radius: $rounded-base;
-    font-family: $font-family;
-    font-size: $font-size-btn;
+    border-radius: $ivf-rounded-base;
+    font-family: $ivf-font-family;
+    font-size: $ivf-font-size-btn;
     border: 0px;
 }
 
 /* Modules */
 .ivf-btn {
-    padding: $spacing-xs $spacing-md;
+    padding: $ivf-spacing-xs $ivf-spacing-md;
     text-align: center;
     cursor: pointer;
 
     &--primary {
-        color: $white;
-        background-color: $primary;
+        color: $ivf-white;
+        background-color: $ivf-primary;
 
         &:hover {
-            background-color: $primary-600;
+            background-color: $ivf-primary-600;
         }
     }
 
     &--secondary {
-        color: $text-primary;
-        background-color: $white;
-        border: 1px solid $tertiary-200;
+        color: $ivf-text-primary;
+        background-color: $ivf-white;
+        border: 1px solid $ivf-tertiary-200;
 
         &:hover {
-            background-color: $tertiary-50;
-            color: $primary;
+            background-color: $ivf-tertiary-50;
+            color: $ivf-primary;
         }
     }
 
     &--tertiary {
-        color: $primary;
+        color: $ivf-primary;
         background-color: transparent;
 
         &:hover {
-            color: $primary-600;
+            color: $ivf-primary-600;
         }
     }
 
     &--small {
-        padding: $spacing-xxs $spacing-sm;
+        padding: $ivf-spacing-xxs $ivf-spacing-sm;
     }
 
     &--large {
-        padding: $spacing-sm $spacing-lg;
+        padding: $ivf-spacing-sm $ivf-spacing-lg;
     }
 }
 
 /* States */
 .ivf-btn.ivf-btn--primary.is-disabled {
     cursor: not-allowed !important;
-    background-color: $primary-200 !important;
+    background-color: $ivf-primary-200 !important;
 
     &:hover {
-        background-color: $primary-200 !important;
+        background-color: $ivf-primary-200 !important;
     }
 }
 
@@ -70,31 +70,31 @@ button {
 .dark {
     .ivf-btn {
         &--primary {
-            color: $white;
-            background-color: $primary-400;
+            color: $ivf-white;
+            background-color: $ivf-primary-400;
     
             &:hover {
-                background-color: $primary-300;
-                color: $white;
+                background-color: $ivf-primary-300;
+                color: $ivf-white;
             }
         }
 
         &--secondary {
-            color: $tertiary-300;
-            background-color: $tertiary-900;
-            border: 1px solid $tertiary-400;
+            color: $ivf-tertiary-300;
+            background-color: $ivf-tertiary-900;
+            border: 1px solid $ivf-tertiary-400;
     
             &:hover {
-                background-color: $tertiary-600;
-                color: $tertiary-50;
+                background-color: $ivf-tertiary-600;
+                color: $ivf-tertiary-50;
             }
         }
 
         &--tertiary {
-            color: $tertiary-300;
+            color: $ivf-tertiary-300;
     
             &:hover {
-                color: $tertiary-50;
+                color: $ivf-tertiary-50;
             }
         }
     }

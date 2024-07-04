@@ -1,23 +1,32 @@
 input, textarea {
     @include base-font;
     background-color: transparent;
-    padding: $spacing-xs $spacing-sm; 
+    padding: $ivf-spacing-xs $ivf-spacing-sm;
     width: 100%;
-    border-radius: $rounded-base;
+    border-radius: $ivf-rounded-base;
 }
 
 .ivf-form-input {
-    border: 1px solid $tertiary-200;
+    border: 1px solid $ivf-tertiary-200;
+    color: $ivf-text-primary;
 
     &:focus {
-        border-color: $primary;
-    }
-
-    &:valid {
-        border-color: $text-success;
+        border-color: $ivf-primary;
     }
 
     &::placeholder {
-        color: $tertiary-300;
+        color: $ivf-tertiary-300;
     }
+}
+
+label {
+    @include base-font;
+    color: $ivf-text-primary;
+    font-size: $ivf-font-size-base;
+}
+
+.ivf-form-label {
+    @include base-font;
+    color: $ivf-text-primary;
+    font-size: $ivf-font-size-base;
 }

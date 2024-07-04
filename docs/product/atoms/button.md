@@ -12,9 +12,9 @@ outline: deep
 
 ```SCSS
 button {
-    border-radius: $rounded-base;
-    font-family: $font-family;
-    font-size: $font-size-btn;
+    border-radius: $ivf-rounded-base;
+    font-family: $ivf-font-family;
+    font-size: $ivf-font-size-btn;
     border: 1px solid;
 }
 ```
@@ -36,28 +36,28 @@ button {
 ```SCSS
 /* LIGHT THEME */
 .ivf-btn {
-    padding: $spacing-xxs $spacing-lg;
+    padding: $ivf-spacing-xxs $ivf-spacing-lg;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s;
 
     &--primary {
-        color: $white;
-        background-color: $primary;
+        color: $ivf-white;
+        background-color: $ivf-primary;
     }
 
     &--secondary {
-        color: $text-primary;
-        background-color: $white;
-        border-color: $tertiary-200;
+        color: $ivf-text-primary;
+        background-color: $ivf-white;
+        border-color: $ivf-tertiary-200;
     }
 
     &--tertiary {
-        color: $primary;
+        color: $ivf-primary;
         background-color: transparent;
 
         &:hover {
-            color: $primary-300;
+            color: $ivf-primary-300;
         }
     }
 }
@@ -66,31 +66,31 @@ button {
 .dark {
     .ivf-btn {
         &--primary {
-            color: $white;
-            background-color: $primary-400;
+            color: $ivf-white;
+            background-color: $ivf-primary-400;
     
             &:hover {
-                background-color: $primary-300;
-                color: $white;
+                background-color: $ivf-primary-300;
+                color: $ivf-white;
             }
         }
 
         &--secondary {
-            color: $tertiary-300;
-            background-color: $tertiary-900;
-            border: 1px solid $tertiary-400;
+            color: $ivf-tertiary-300;
+            background-color: $ivf-tertiary-900;
+            border: 1px solid $ivf-tertiary-400;
     
             &:hover {
-                background-color: $tertiary-600;
-                color: $tertiary-50;
+                background-color: $ivf-tertiary-600;
+                color: $ivf-tertiary-50;
             }
         }
 
         &--tertiary {
-            color: $tertiary-300;
+            color: $ivf-tertiary-300;
     
             &:hover {
-                color: $tertiary-50;
+                color: $ivf-tertiary-50;
             }
         }
     }
@@ -114,11 +114,11 @@ button {
 ```SCSS
 .btn {
     &--small {
-        padding: $spacing-xxs $spacing-sm;
+        padding: $ivf-spacing-xxs $ivf-spacing-sm;
     }
 
     &--large {
-        padding: $spacing-sm $spacing-lg;
+        padding: $ivf-spacing-sm $ivf-spacing-lg;
     }
 }
 ```
@@ -136,10 +136,10 @@ button {
 ```SCSS
 .ivf-btn--primary.is-disabled {
     cursor: not-allowed;
-    background-color: $primary-200;
+    background-color: $ivf-primary-200;
 
     &:hover {
-        background-color: $primary-200;
+        background-color: $ivf-primary-200;
     }
 }
 ```

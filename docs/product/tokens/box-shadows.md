@@ -9,23 +9,23 @@ outline: deep
         width: 100%;
         max-width: 12rem;
         height: 12rem;
-        border-radius: $rounded-base;
+        border-radius: $ivf-rounded-base;
     }
 
     .shadow-sm {
-            box-shadow: $shadow-sm;
+            box-shadow: $ivf-shadow-sm;
         }
 
         .shadow-md {
-            box-shadow: $shadow-md;
+            box-shadow: $ivf-shadow-md;
         }
 
         .shadow-lg {
-            box-shadow: $shadow-lg;
+            box-shadow: $ivf-shadow-lg;
         }
 
         .shadow-xl {
-            box-shadow: $shadow-xl;
+            box-shadow: $ivf-shadow-xl;
         }
 </style>
 

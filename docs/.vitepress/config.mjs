@@ -48,7 +48,8 @@ export default defineConfig({
                 {
                     text: 'Atoms',
                     items: [
-                        {text: 'Buttons', link: '/product/atoms/button'}
+                        {text: 'Buttons', link: '/product/atoms/button'},
+                        {text: 'Inputs', link: '/product/atoms/input'}
                     ]
                 }
             ],
