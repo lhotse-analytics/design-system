@@ -5,6 +5,9 @@ package-lock.json
 # VSCode
 .vscode/
 
+# IntelliJ
+.idea/
+
 # macOS
 .DS_Store
 
