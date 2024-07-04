@@ -11,3 +11,6 @@ package-lock.json
 # Windows
 Thumbs.db
 ehthumbs.db
+
+# VitePress Cache
+docs/.vitepress/
