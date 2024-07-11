@@ -1,31 +1,55 @@
 input, textarea {
-    @include ivf-base-text;
-    background-color: transparent;
-    padding: $ivf-spacing-xs $ivf-spacing-sm;
-    width: 100%;
-    border-radius: $ivf-rounded-base;
+  display: block;
+  @include ivf-base-text;
+  background-color: transparent;
+  padding: $ivf-spacing-xs $ivf-spacing-sm;
+  width: 100%;
+  border-radius: $ivf-rounded-base;
+
 }
 
-.ivf-form-input {
+.ivf-form__group {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-of-type) {
+    margin-bottom: $ivf-spacing-xl;
+  }
+}
+
+.ivf-form__input {
+
+  &--text,
+  &--textarea,
+  &--email,
+  &--password,
+  &--number,
+  &--phone,
+  &--date,
+  &--datetime {
     border: 1px solid $ivf-tertiary-200;
 
     &:focus {
-        border-color: $ivf-primary;
+      border-color: $ivf-primary;
     }
 
     &::placeholder {
-        color: $ivf-tertiary-200;
+      color: $ivf-tertiary-300;
     }
+  }
+
+
+  .is-valid {
+    border-color: $ivf-text-success;
+  }
+
+  .is-invalid {
+    border-color: $ivf-text-danger;
+  }
 }
 
 label {
-    @include ivf-base-font;
-    color: $ivf-text-primary;
-    font-size: $ivf-font-size-base;
-}
-
-.ivf-form-label {
-    @include ivf-base-font;
-    color: $ivf-text-primary;
-    font-size: $ivf-font-size-base;
+  display: block;
+  @include ivf-base-text;
+  margin-bottom: $ivf-spacing-xxs;
 }
