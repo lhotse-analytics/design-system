@@ -4,6 +4,7 @@ import {defineConfig} from 'vitepress'
 export default defineConfig({
     title: "ivoflow",
     description: "A Brand and UI Guide",
+    base: "/design-system/",
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
