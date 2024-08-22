@@ -6,7 +6,7 @@ outline: deep
     @import './../../dist/css/main.css';
 </style>
 
-# Inputs
+# Inputs (WIP)
 
 ## Types
 

@@ -96,14 +96,14 @@ $ivf-tertiary-900: #171717;
 
 <br>
 <div class="color-wrapper">
-<div class="color-card" style="background-color: #FFF8F1; font-size: 0.75rem;color: black;">highlight-red-50</div>
+<div class="color-card" style="background-color: #FDE8E8; font-size: 0.75rem;color: black;">highlight-red-50</div>
 <div class="color-card" style="background-color: #F8B4B4; font-size: 0.75rem;color: black;">highlight-red-200</div>
 <div class="color-card" style="background-color: #F05252; font-size: 0.75rem;color: white;">highlight-red-400</div>
 <div class="color-card" style="background-color: #C81E1E; font-size: 0.75rem;color: white;">highlight-red-600</div>
 </div>
 
 ```SCSS
-$ivf-highlight-red-50: #FFF8F1;
+$ivf-highlight-red-50: #FDE8E8;
 $ivf-highlight-red-200: #F8B4B4;
 $ivf-highlight-red-400: #F05252;
 $ivf-highlight-red-600: #C81E1E;
@@ -113,14 +113,14 @@ $ivf-highlight-red-600: #C81E1E;
 
 <br>
 <div class="color-wrapper">
-<div class="color-card" style="background-color: #F3FAF7; font-size: 0.75rem;color: black;">highlight-green-50</div>
+<div class="color-card" style="background-color: #DEF7EC; font-size: 0.75rem;color: black;">highlight-green-50</div>
 <div class="color-card" style="background-color: #84E1BC; font-size: 0.75rem;color: black;">highlight-green-200</div>
 <div class="color-card" style="background-color: #0E9F6E; font-size: 0.75rem;color: white;">highlight-green-400</div>
 <div class="color-card" style="background-color: #046C4E; font-size: 0.75rem;color: white;">highlight-green-600</div>
 </div>
 
 ```SCSS
-$ivf-highlight-green-50: #F3FAF7;
+$ivf-highlight-green-50: #DEF7EC;
 $ivf-highlight-green-200: #84E1BC;
 $ivf-highlight-green-400: #0E9F6E;
 $ivf-highlight-green-600: #046C4E;
@@ -130,14 +130,14 @@ $ivf-highlight-green-600: #046C4E;
 
 <br>
 <div class="color-wrapper">
-<div class="color-card" style="background-color: #FDFDEA; font-size: 0.75rem;color: black;">highlight-yellow-50</div>
+<div class="color-card" style="background-color: #FDF6B2; font-size: 0.75rem;color: black;">highlight-yellow-50</div>
 <div class="color-card" style="background-color: #FCE96A; font-size: 0.75rem;color: black;">highlight-yellow-200</div>
 <div class="color-card" style="background-color: #FACA15; font-size: 0.75rem;color: black;">highlight-yellow-400</div>
 <div class="color-card" style="background-color: #C27803; font-size: 0.75rem;color: white;">highlight-yellow-600</div>
 </div>
 
 ```SCSS
-$ivf-highlight-yellow-50: #FDFDEA;
+$ivf-highlight-yellow-50: #FDF6B2;
 $ivf-highlight-yellow-200: #FCE96A;
 $ivf-highlight-yellow-400: #FACA15;
 $ivf-highlight-yellow-600: #C27803;

@@ -3,7 +3,7 @@ outline: deep
 ---
 
 <style>
-    @import './../../dist/css/main.css'
+    @import './../../dist/css/main.css';
 </style>
 
 # Typography
@@ -165,38 +165,38 @@ $line-height-large
 
 ## Usage
 
-```CSS
+```SCSS
 body {
-    font-family: var(--font-family);
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-normal);
-    line-height: var(--line-height-base);
-    color: var(--text-primary);
+    font-family: $ivf-font-family;
+    font-size: $ivf-font-size-base;
+    font-weight: $ivf-font-weight-base;
+    line-height: $line-height-base;
+    color: $ivf-text-primary;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: var(--font-weight-bold);
-    line-height: var(--line-height-large);
+    font-weight: $ivf-font-weight-bold;
+    line-height: $line-height-large;
 }
     
 h1 {
-    font-size: var(--font-size-xl);
+    font-size: $ivf-font-size-xl;
 }
 
 h2 {
-    font-size: var(--font-size-lg);
+    font-size: $ivf-font-size-lg;
 }
 
 h3 {
-    font-size: var(--font-size-md)
+    font-size: $ivf-font-size-md;
 }
 
 h4, h5, h6 {
-    font-size: var(--font-size-base);
+    font-size: $ivf-font-size-base;
 }
 
 p {
-    font-size: var(--font-size-base);
-    line-height: var(--line-height-base);
+    font-size: $ivf-font-size-base;
+    line-height: $line-height-base;
 }
 ```
