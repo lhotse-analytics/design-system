@@ -4,20 +4,15 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: $ivf-spacing-xs $ivf-spacing-md;
+    cursor: pointer;
     gap: $ivf-spacing-xs;
-    line-break: strict;
     border-radius: $ivf-rounded-base;
-    font-family: $ivf-font-family;
-    font-size: $ivf-font-size-btn;
-    border: 0px;
+    border: 0;
 }
 
-/* Modules */
 .ivf-btn {
-    padding: $ivf-spacing-xs $ivf-spacing-md;
-    text-align: center;
-    cursor: pointer;
-
+    /* Modules */
     &--primary {
         color: $ivf-white;
         background-color: $ivf-primary;
@@ -53,6 +48,18 @@ button {
 
     &--large {
         padding: $ivf-spacing-sm $ivf-spacing-lg;
+    }
+
+    /* Elements */
+    &__text {
+        font-family: $ivf-font-family;
+        font-size: $ivf-font-size-btn;
+        white-space: nowrap;
+    }
+
+    &__icon {
+        width: auto;
+        height: $ivf-spacing-lg;
     }
 }
 
