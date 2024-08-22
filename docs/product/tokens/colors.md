@@ -34,15 +34,15 @@ outline: deep
 </div>
 
 ```SCSS
-$primary-50: #DAE3FF;
-$primary-100: #A9B9EB;
-$primary-200: #7991D9;
-$primary-300: #3C5EC7;
-$primary-400: #002AA7;
-$primary-600: #001D74;
-$primary-900: #001042;
+$ivf-primary-50: #DAE3FF;
+$ivf-primary-100: #A9B9EB;
+$ivf-primary-200: #7991D9;
+$ivf-primary-300: #3C5EC7;
+$ivf-primary-400: #002AA7;
+$ivf-primary-600: #001D74;
+$ivf-primary-900: #001042;
 
-$primary: $primary-400;
+$ivf-primary: $ivf-primary-400;
 ```
 
 ### Secondary
@@ -57,13 +57,13 @@ $primary: $primary-400;
 </div>
 
 ```SCSS
-$secondary-100: #FFF0E3;
-$secondary-200: #F7D8BC;
-$secondary-300: #E5B58A;
-$secondary-400: #CA9466;
-$secondary-600: #8D6747;
+$ivf-secondary-100: #FFF0E3;
+$ivf-secondary-200: #F7D8BC;
+$ivf-secondary-300: #E5B58A;
+$ivf-secondary-400: #CA9466;
+$ivf-secondary-600: #8D6747;
 
-$secondary: $secondary-400;
+$ivf-secondary: $ivf-secondary-400;
 ```
 
 ### Tertiary
@@ -80,14 +80,14 @@ $secondary: $secondary-400;
 </div>
 
 ```SCSS
-$white: #fff;
-$tertiary-50: #FAFAFA;
-$tertiary-100: #ECECEC;
-$tertiary-200: #D0D0D0;
-$tertiary-300: #AEAEAE;
-$tertiary-400: #737373;
-$tertiary-600: #454545;
-$tertiary-900: #171717;
+$ivf-white: #fff;
+$ivf-tertiary-50: #FAFAFA;
+$ivf-tertiary-100: #ECECEC;
+$ivf-tertiary-200: #D0D0D0;
+$ivf-tertiary-300: #AEAEAE;
+$ivf-tertiary-400: #737373;
+$ivf-tertiary-600: #454545;
+$ivf-tertiary-900: #171717;
 ```
 
 ## Highlight Colors
@@ -96,51 +96,51 @@ $tertiary-900: #171717;
 
 <br>
 <div class="color-wrapper">
-<div class="color-card" style="background-color: #FFF8F1; font-size: 0.75rem;color: black;">highlight-red-50</div>
+<div class="color-card" style="background-color: #FDE8E8; font-size: 0.75rem;color: black;">highlight-red-50</div>
 <div class="color-card" style="background-color: #F8B4B4; font-size: 0.75rem;color: black;">highlight-red-200</div>
 <div class="color-card" style="background-color: #F05252; font-size: 0.75rem;color: white;">highlight-red-400</div>
 <div class="color-card" style="background-color: #C81E1E; font-size: 0.75rem;color: white;">highlight-red-600</div>
 </div>
 
 ```SCSS
-$highlight-red-50: #FFF8F1;
-$highlight-red-200: #F8B4B4;
-$highlight-red-400: #F05252;
-$highlight-red-600: #C81E1E;
+$ivf-highlight-red-50: #FDE8E8;
+$ivf-highlight-red-200: #F8B4B4;
+$ivf-highlight-red-400: #F05252;
+$ivf-highlight-red-600: #C81E1E;
 ```
 
 ### Green
 
 <br>
 <div class="color-wrapper">
-<div class="color-card" style="background-color: #F3FAF7; font-size: 0.75rem;color: black;">highlight-green-50</div>
+<div class="color-card" style="background-color: #DEF7EC; font-size: 0.75rem;color: black;">highlight-green-50</div>
 <div class="color-card" style="background-color: #84E1BC; font-size: 0.75rem;color: black;">highlight-green-200</div>
 <div class="color-card" style="background-color: #0E9F6E; font-size: 0.75rem;color: white;">highlight-green-400</div>
 <div class="color-card" style="background-color: #046C4E; font-size: 0.75rem;color: white;">highlight-green-600</div>
 </div>
 
 ```SCSS
-$highlight-green-50: #F3FAF7;
-$highlight-green-200: #84E1BC;
-$highlight-green-400: #0E9F6E;
-$highlight-green-600: #046C4E;
+$ivf-highlight-green-50: #DEF7EC;
+$ivf-highlight-green-200: #84E1BC;
+$ivf-highlight-green-400: #0E9F6E;
+$ivf-highlight-green-600: #046C4E;
 ```
 
 ### Yellow
 
 <br>
 <div class="color-wrapper">
-<div class="color-card" style="background-color: #FDFDEA; font-size: 0.75rem;color: black;">highlight-yellow-50</div>
+<div class="color-card" style="background-color: #FDF6B2; font-size: 0.75rem;color: black;">highlight-yellow-50</div>
 <div class="color-card" style="background-color: #FCE96A; font-size: 0.75rem;color: black;">highlight-yellow-200</div>
 <div class="color-card" style="background-color: #FACA15; font-size: 0.75rem;color: black;">highlight-yellow-400</div>
 <div class="color-card" style="background-color: #C27803; font-size: 0.75rem;color: white;">highlight-yellow-600</div>
 </div>
 
 ```SCSS
-$highlight-yellow-50: #FDFDEA;
-$highlight-yellow-200: #FCE96A;
-$highlight-yellow-400: #FACA15;
-$highlight-yellow-600: #C27803;
+$ivf-highlight-yellow-50: #FDF6B2;
+$ivf-highlight-yellow-200: #FCE96A;
+$ivf-highlight-yellow-400: #FACA15;
+$ivf-highlight-yellow-600: #C27803;
 ```
 
 ### Pink
@@ -152,8 +152,8 @@ $highlight-yellow-600: #C27803;
 </div>
 
 ```SCSS
-$highlight-pink-50: #FCE8F3;
-$highlight-pink-400: #E74694;
+$ivf-highlight-pink-50: #FCE8F3;
+$ivf-highlight-pink-400: #E74694;
 ```
 
 ### Purple
@@ -165,8 +165,8 @@ $highlight-pink-400: #E74694;
 </div>
 
 ```SCSS
-$highlight-purple-50: #EDEBFE;
-$highlight-purple-400: #9061F9;
+$ivf-highlight-purple-50: #EDEBFE;
+$ivf-highlight-purple-400: #9061F9;
 ```
 
 ### Indigo
@@ -178,8 +178,8 @@ $highlight-purple-400: #9061F9;
 </div>
 
 ```SCSS
-$highlight-indigo-50: #E5EDFF;
-$highlight-indigo-400: #5850EC;
+$ivf-highlight-indigo-50: #E5EDFF;
+$ivf-highlight-indigo-400: #5850EC;
 ```
 
 ### Teal
@@ -191,8 +191,8 @@ $highlight-indigo-400: #5850EC;
 </div>
 
 ```SCSS
-$highlight-teal-50: #D5F5F6;
-$highlight-teal-400: #16BDCA;
+$ivf-highlight-teal-50: #D5F5F6;
+$ivf-highlight-teal-400: #16BDCA;
 ```
 
 ### Orange
@@ -204,8 +204,8 @@ $highlight-teal-400: #16BDCA;
 </div>
 
 ```SCSS
-$highlight-orange-50: #FEECDC;
-$highlight-orange-400: #FF8A4C;
+$ivf-highlight-orange-50: #FEECDC;
+$ivf-highlight-orange-400: #FF8A4C;
 ```
 
 ## Theming
@@ -213,20 +213,20 @@ $highlight-orange-400: #FF8A4C;
 ### Typography
 
 ```SCSS
-$text-primary: $tertiary-900;
-$text-danger: $highlight-red-600;
-$text-warning: $highlight-yellow-600;
-$text-success: $highlight-green-600;
-$text-info: $primary-600;
+$ivf-text-primary: $ivf-tertiary-900;
+$ivf-text-danger: $ivf-highlight-red-600;
+$ivf-text-warning: $ivf-highlight-yellow-600;
+$ivf-text-success: $ivf-highlight-green-600;
+$ivf-text-info: $ivf-primary-600;
 ```
 
 ### Background Colors
 
 ```SCSS
-$background-primary: $white;
-$background-secondary: $tertiary-50;
-$background-danger: $highlight-red-50;
-$background-warning: $highlight-yellow-50;
-$background-success: $highlight-green-50;
-$background-info: $primary-50;
+$ivf-background-primary: $ivf-white;
+$ivf-background-secondary: $ivf-tertiary-50;
+$ivf-background-danger: $ivf-highlight-red-50;
+$ivf-background-warning: $ivf-highlight-yellow-50;
+$ivf-background-success: $ivf-highlight-green-50;
+$ivf-background-info: $ivf-primary-50;
 ```

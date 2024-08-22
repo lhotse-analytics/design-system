@@ -3,7 +3,7 @@ outline: deep
 ---
 
 <style>
-    @import './../../dist/css/main.css'
+    @import './../../dist/css/main.css';
 </style>
 
 # Typography
@@ -15,7 +15,7 @@ outline: deep
 Lexend, sans-serif
 
 ```SCSS
-$font-family: "Lexend", sans-serif;
+$ivf-font-family: "Lexend", sans-serif;
 ```
 
 ### Font Sizes
@@ -23,16 +23,16 @@ $font-family: "Lexend", sans-serif;
 #### Variables
 
 ```SCSS
-$font-size-xxs: 0.5rem;         // 8px
-$font-size-xs: 0.625rem;        // 10px
-$font-size-sm: 0.75rem;         // 12px
-$font-size-base: 0.875rem;      // 14px
-$font-size-md: 1rem;            // 16px
-$font-size-lg: 1.125rem;        // 18px
-$font-size-xl: 1.25rem;         // 20px
-$font-size-2xl: 1.5rem;         // 24px
-$font-size-3xl: 1.875rem;       // 30px
-$font-size-4xl: 2.25rem;        // 36px
+$ivf-font-size-xxs: 0.5rem;         // 8px
+$ivf-font-size-xs: 0.625rem;        // 10px
+$ivf-font-size-sm: 0.75rem;         // 12px
+$ivf-font-size-base: 0.875rem;      // 14px
+$ivf-font-size-md: 1rem;            // 16px
+$ivf-font-size-lg: 1.125rem;        // 18px
+$ivf-font-size-xl: 1.25rem;         // 20px
+$ivf-font-size-2xl: 1.5rem;         // 24px
+$ivf-font-size-3xl: 1.875rem;       // 30px
+$ivf-font-size-4xl: 2.25rem;        // 36px
 ```
 
 #### Examples
@@ -40,61 +40,61 @@ $font-size-4xl: 2.25rem;        // 36px
 <span style="font-size: 0.5rem;">Lorem Ipsum Dolor sit Amet</span>
 
 ```SCSS
-$font-size-xxs
+$ivf-font-size-xxs
 ```
 
 <span style="font-size: 0.625rem;">Lorem Ipsum Dolor sit Amet</span>
 
 ```SCSS
-$font-size-xs
+$ivf-font-size-xs
 ```
 
 <span style="font-size: 0.75rem;">Lorem Ipsum Dolor sit Amet</span>
 
 ```SCSS
-$font-size-sm
+$ivf-font-size-sm
 ```
 
 <span style="font-size: 0.875rem;">Lorem Ipsum Dolor sit Amet</span>
 
 ```SCSS
-$font-size-xxs
+$ivf-font-size-xxs
 ```
 
 <span style="font-size: 1rem;">Lorem Ipsum Dolor sit Amet</span>
 
 ```SCSS
-$font-size-md
+$ivf-font-size-md
 ```
 
 <span style="font-size: 1.125rem;">Lorem Ipsum Dolor sit Amet</span>
 
 ```SCSS
-$font-size-lg
+$ivf-font-size-lg
 ```
 
 <span style="font-size: 1.25rem;">Lorem Ipsum Dolor sit Amet</span>
 
 ```SCSS
-$font-size-xl
+$ivf-font-size-xl
 ```
 
 <span style="font-size: 1.5rem;">Lorem Ipsum Dolor sit Amet</span>
 
 ```SCSS
-$font-size-2xl
+$ivf-font-size-2xl
 ```
 
 <span style="font-size: 1.875rem;">Lorem Ipsum Dolor sit Amet</span>
 
 ```SCSS
-$font-size-3xl
+$ivf-font-size-3xl
 ```
 
 <span style="font-size: 2.25rem;">Lorem Ipsum Dolor sit Amet</span>
 
 ```SCSS
-$font-size-4xl
+$ivf-font-size-4xl
 ```
 
 ### Font Weights
@@ -102,9 +102,9 @@ $font-size-4xl
 #### Variables
 
 ```SCSS
-$font-weight-light: 300;
-$font-weight-base: 400;
-$font-weight-bold: 600;
+$ivf-font-weight-light: 300;
+$ivf-font-weight-base: 400;
+$ivf-font-weight-bold: 600;
 ```
 
 #### Examples
@@ -112,19 +112,19 @@ $font-weight-bold: 600;
 <span style="font-weight: 300;">Lorem Ipsum Dolor sit Amet</span>
 
 ```SCSS
-$font-weight-light;
+$ivf-font-weight-light;
 ```
 
 <span style="font-weight: 400;">Lorem Ipsum Dolor sit Amet</span>
 
 ```SCSS
-$font-weight-base;
+$ivf-font-weight-base;
 ```
 
 <span style="font-weight: 600;">Lorem Ipsum Dolor sit Amet</span>
 
 ```SCSS
-$font-weight-bold;
+$ivf-font-weight-bold;
 ```
 
 ### Line Heights
@@ -165,38 +165,38 @@ $line-height-large
 
 ## Usage
 
-```CSS
+```SCSS
 body {
-    font-family: var(--font-family);
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-normal);
-    line-height: var(--line-height-base);
-    color: var(--text-primary);
+    font-family: $ivf-font-family;
+    font-size: $ivf-font-size-base;
+    font-weight: $ivf-font-weight-base;
+    line-height: $line-height-base;
+    color: $ivf-text-primary;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: var(--font-weight-bold);
-    line-height: var(--line-height-large);
+    font-weight: $ivf-font-weight-bold;
+    line-height: $line-height-large;
 }
     
 h1 {
-    font-size: var(--font-size-xl);
+    font-size: $ivf-font-size-xl;
 }
 
 h2 {
-    font-size: var(--font-size-lg);
+    font-size: $ivf-font-size-lg;
 }
 
 h3 {
-    font-size: var(--font-size-md)
+    font-size: $ivf-font-size-md;
 }
 
 h4, h5, h6 {
-    font-size: var(--font-size-base);
+    font-size: $ivf-font-size-base;
 }
 
 p {
-    font-size: var(--font-size-base);
-    line-height: var(--line-height-base);
+    font-size: $ivf-font-size-base;
+    line-height: $line-height-base;
 }
 ```

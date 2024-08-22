@@ -41,15 +41,17 @@ export default defineConfig({
                         {text: 'Colors', link: '/product/tokens/colors'},
                         {text: 'Typography', link: '/product/tokens/typography'},
                         {text: 'Layout', link: '/product/tokens/layout'},
-                        {text: 'Sizing', link: '/product/tokens/sizing'},
+                        {text: 'Spacing', link: '/product/tokens/spacing'},
                         {text: 'Shadows', link: '/product/tokens/box-shadows'},
-                        {text: 'Border Radius', link: '/product/tokens/border-radius'}
+                        {text: 'Border Radius', link: '/product/tokens/border-radius'},
+                        {text: 'Mixins', link: '/product/tokens/mixins'}
                     ]
                 },
                 {
                     text: 'Atoms',
                     items: [
-                        {text: 'Buttons', link: '/product/atoms/button'}
+                        {text: 'Buttons', link: '/product/atoms/button'},
+                        {text: 'Inputs', link: '/product/atoms/input'}
                     ]
                 }
             ],

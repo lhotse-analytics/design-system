@@ -1,47 +1,101 @@
 /* Base */
 button {
-    border-radius: $rounded-base;
-    font-family: $font-family;
-    font-size: $font-size-btn;
-    border: 1px solid;
+    @include transition(all);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $ivf-spacing-xs;
+    line-break: strict;
+    border-radius: $ivf-rounded-base;
+    font-family: $ivf-font-family;
+    font-size: $ivf-font-size-btn;
+    border: 0px;
 }
 
 /* Modules */
-
-.btn {
-    padding: $spacing-xs $spacing-md;
+.ivf-btn {
+    padding: $ivf-spacing-xs $ivf-spacing-md;
     text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s;
 
     &--primary {
-        color: $white;
-        background-color: $primary;
+        color: $ivf-white;
+        background-color: $ivf-primary;
 
         &:hover {
-            background-color: $primary-600;
+            background-color: $ivf-primary-600;
         }
     }
 
     &--secondary {
-        color: $text-primary;
-        background-color: $white;
-        border-color: $tertiary-200;
+        color: $ivf-text-primary;
+        background-color: $ivf-white;
+        border: 1px solid $ivf-tertiary-200;
 
         &:hover {
-            background-color: $tertiary-50;
-            color: $primary;
+            background-color: $ivf-tertiary-50;
+            color: $ivf-primary;
         }
+    }
+
+    &--tertiary {
+        color: $ivf-primary;
+        background-color: transparent;
+
+        &:hover {
+            color: $ivf-primary-600;
+        }
+    }
+
+    &--small {
+        padding: $ivf-spacing-xxs $ivf-spacing-sm;
+    }
+
+    &--large {
+        padding: $ivf-spacing-sm $ivf-spacing-lg;
     }
 }
 
 /* States */
-.btn.btn--primary.is-disabled {
+.ivf-btn.ivf-btn--primary.is-disabled {
     cursor: not-allowed !important;
-    background-color: $primary-200 !important;
+    background-color: $ivf-primary-200 !important;
 
     &:hover {
-        background-color: $primary-200 !important;
+        background-color: $ivf-primary-200 !important;
     }
 }
 
+/* Theme */
+.dark {
+    .ivf-btn {
+        &--primary {
+            color: $ivf-white;
+            background-color: $ivf-primary-400;
+    
+            &:hover {
+                background-color: $ivf-primary-300;
+                color: $ivf-white;
+            }
+        }
+
+        &--secondary {
+            color: $ivf-tertiary-300;
+            background-color: $ivf-tertiary-900;
+            border: 1px solid $ivf-tertiary-400;
+    
+            &:hover {
+                background-color: $ivf-tertiary-600;
+                color: $ivf-tertiary-50;
+            }
+        }
+
+        &--tertiary {
+            color: $ivf-tertiary-300;
+    
+            &:hover {
+                color: $ivf-tertiary-50;
+            }
+        }
+    }
+}
